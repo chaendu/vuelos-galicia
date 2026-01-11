@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Información de Aeropuertos de Galicia y Oporto | Guía de Viaje</title>
+    <meta name="description" content="Guía completa de los aeropuertos de Vigo, A Coruña, Santiago y Oporto. Horarios de bus, tren y destinos disponibles.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Guía de Aeropuertos: Galicia y Norte de Portugal</h1>
+        <p>Toda la información sobre destinos, transporte y conexiones.</p>
+    </header>
+
+    <div class="ads-container">
+        <p style="color:#ccc; font-size: 12px;">PUBLICIDAD</p>
+    </div>
+
+    <nav class="tabs-nav">
+        <button class="tab-link active" onclick="openAirport(event, 'oporto')">Oporto (OPO)</button>
+        <button class="tab-link" onclick="openAirport(event, 'santiago')">Santiago (SCQ)</button>
+        <button class="tab-link" onclick="openAirport(event, 'coruna')">A Coruña (LCG)</button>
+        <button class="tab-link" onclick="openAirport(event, 'vigo')">Vigo (VGO)</button>
+    </nav>
+
+    <main id="content">
+        <section id="oporto" class="airport-content active">
+            <h2>Aeropuerto Sá Carneiro (Oporto)</h2>
+            <p class="warning">⚠️ Recuerda: El huso horario portugués es -1h respecto a España.</p>
+            
+            <h3>Desde Vigo: Cómo llegar</h3>
+            <div class="transport-grid">
+                <div class="card">
+                    <h4>🚌 Autobús (Directos)</h4>
+                    <ul>
+                        <li><strong>AUTNA:</strong> Directo desde Intermodal (1h 50m - 2h 20m).</li>
+                        <li><strong>FLIXBUS:</strong> Paradas en Braga/Valença (1h 50m - 2h 20m).</li>
+                        <li><strong>ALSA / REDE EXPRESSOS:</strong> Paradas en Valença y V. de Cerveira.</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h4>🚆 Tren</h4>
+                    <p>Salida: Vigo-Guixar hasta Oporto Campanhã.</p>
+                    <p>Frecuencias: 8:58 y 18:05.</p>
+                    <p>Conexión: Metro Línea E (30 min) al aeropuerto.</p>
+                    <p><strong>Duración total:</strong> 2h 50m – 3h.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="santiago" class="airport-content">
+            <h2>Aeropuerto Rosalía de Castro (Lavacolla)</h2>
+            <p><strong>Ubicación:</strong> Lavacolla, s/n - 15820 Santiago de Compostela.</p>
+            <h3>Destinos Disponibles</h3>
+            <ul class="destinos-list">
+                <li>Madrid, Barcelona, Bilbao, Valencia, Sevilla, Málaga.</li>
+                <li>Islas: Tenerife (Norte/Sur), Gran Canaria, Lanzarote, Fuerteventura, Palma.</li>
+                <li>Internacional: Londres (Heathrow/Stansted), París (Orly), Ginebra, Basilea.</li>
+            </ul>
+        </section>
+
+        <section id="coruna" class="airport-content">
+            <h2>Aeropuerto de Alvedro (LCG)</h2>
+            <p><strong>Ubicación:</strong> Avda. Hermida, s/n - 15174 Culleredo.</p>
+            
+            <h3>Transporte Público</h3>
+            <div class="card">
+                <h4>Bus Metropolitano Línea A4</h4>
+                <p>Frecuencia: Cada 30 min (Laborales) / 60 min (Festivos).</p>
+                <p>Horario: 07:30 a 22:30 h.</p>
+            </div>
+
+            <h3>Destinos</h3>
+            <ul class="destinos-list">
+                <li>Madrid, Barcelona, Málaga, Valencia, Gran Canaria, Londres (Gatwick), Ginebra.</li>
+            </ul>
+        </section>
+
+        <section id="vigo" class="airport-content">
+            <h2>Aeropuerto de Peinador (VGO)</h2>
+            <p><strong>Ubicación:</strong> Avda. do Aeroporto, s/n - 36218 Vigo.</p>
+            <h3>Destinos</h3>
+            <ul class="destinos-list">
+                <li>Madrid-Barajas, Barcelona-El Prat, Gran Canaria, Tenerife Norte.</li>
+            </ul>
+        </section>
+    </main>
+
+    <div class="ads-container">
+        </div>
+
+    <footer>
+        <p>&copy; 2024 Guía de Aeropuertos de Galicia | <a href="contacto.html">Contacto</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
